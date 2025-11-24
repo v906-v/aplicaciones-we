@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 40</title>
+    <meta name="description" content="Esto es la descripción de mi página web">
+    <meta name="keywords" content="html, ejercicio, ejercicio1, ejemplo">
+    <meta name="author" content="Victor Lopez Peindo">
+    <meta name="application-name" content="Ejercicio40.html">
+    <meta name="generator" content="VSCode">
+    <link rel="icon" sizes="64x64" href="./assets/icon/descarga.png">
+</head>
+<body>
+     <h1>Rellena tu CV</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="provincia">Provincia</label><br>
+            <select id="provincia" name="provincia">
+                <option value="">- selecciona -</option>
+                <option>Álava</option>
+                <option>Albacete</option>
+                <option>Alicante</option>
+                <option>Almería</option>
+                <option>Asturias</option>
+                <option>Ávila</option>
+                <option>Badajoz</option>
+                <option>Barcelona</option>
+                <option>Burgos</option>
+                <option>Cáceres</option>
+                <option>Cádiz</option>
+                <option>Cantabria</option>
+                <option>Castellón</option>
+                <option>Ciudad Real</option>
+                <option>Córdoba</option>
+                <option>Cuenca</option>
+                <option>Girona</option>
+                <option>Granada</option>
+                <option>Guadalajara</option>
+                <option>Gipuzkoa</option>
+                <option>Huelva</option>
+                <option>Huesca</option>
+                <option>Islas Baleares</option>
+                <option>Jaén</option>
+                <option>La Rioja</option>
+                <option>Las Palmas</option>
+                <option>León</option>
+                <option>Lleida</option>
+                <option>Lugo</option>
+                <option>Madrid</option>
+                <option>Málaga</option>
+                <option>Murcia</option>
+                <option>Navarra</option>
+                <option>Ourense</option>
+                <option>Palencia</option>
+                <option>Pontevedra</option>
+                <option>Santa Cruz de Tenerife</option>
+                <option>Segovia</option>
+                <option>Sevilla</option>
+                <option>Soria</option>
+                <option>Tarragona</option>
+                <option>Teruel</option>
+                <option>Toledo</option>
+                <option>Valencia</option>
+                <option>Valladolid</option>
+                <option>Zamora</option>
+                <option>Zaragoza</option>
+                <option>Ceuta</option>
+                <option>Melilla</option>
+            </select>
+            <br><br>
+
+            <label>Fecha de nacimiento</label><br>
+            <select id="dia" name="dia">
+                <option value="">día</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+                <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+                <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+                <option>31</option>
+            </select>
+
+            <select id="mes" name="mes">
+                <option value="">mes</option>
+                <option>Enero</option><option>Febrero</option><option>Marzo</option><option>Abril</option>
+                <option>Mayo</option><option>Junio</option><option>Julio</option><option>Agosto</option>
+                <option>Septiembre</option><option>Octubre</option><option>Noviembre</option><option>Diciembre</option>
+            </select>
+
+            <input type="number" id="anio" name="anio" placeholder="año" min="1900" max="2025" style="width:80px;">
+            <br><br>
+
+          
+        </fieldset>
+
+        <br>
+
+        <input type="reset" value="Borrar datos">
+        <input type="submit" value="Guardar cambios">
+    </form>
+</body>
+</html>
