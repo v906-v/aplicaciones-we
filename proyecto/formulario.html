@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto de TechHub - Envía tus consultas y sugerencias">
+    <title>Contacto - TechHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <h1 class="logo">⚡ TechHub</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="personalizados.html">Reseñas</a></li>
+                    <li><a href="formulario.html" class="active">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario-section">
+            <h1>Contacta con Nosotros</h1>
+            <p class="section-subtitle">¿Tienes alguna pregunta? Nos encantaría escucharte</p>
+
+            <div class="contact-info">
+                <article class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>info@techhub.es</p>
+                </article>
+                <article class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Teléfono</h3>
+                    <p>900 123 456</p>
+                </article>
+                <article class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Ubicación</h3>
+                    <p>Madrid, España</p>
+                </article>
+            </div>
+
+            <form action="#" method="post" class="contact-form">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="900 123 456">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo de consulta *</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="">- Selecciona una opción -</option>
+                                <option value="producto">Pregunta sobre producto</option>
+                                <option value="envio">Problemas de envío</option>
+                                <option value="garantia">Garantía y devoluciones</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tu Mensaje</legend>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" required placeholder="Asunto del mensaje">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="8" required placeholder="Cuéntanos tu consulta..."></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">Deseo recibir información sobre nuevos productos y ofertas</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos, condiciones y política de privacidad *</label>
+                    </div>
+                </fieldset>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    <button type="reset" class="btn-secondary">Limpiar Formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre TechHub</h4>
+                <p>Tu tienda online de confianza para los mejores productos tecnológicos del mercado.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="personalizados.html">Blog</a></li>
+                    <li><a href="formulario.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: info@techhub.es</p>
+                <p>Teléfono: 900 123 456</p>
+                <p>Dirección: Madrid, España</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TechHub. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
