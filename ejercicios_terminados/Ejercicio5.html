@@ -4,35 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ejercicio 5</title>
-        <style>
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: repeat(6, 80px);
-                gap: 2px;
-                width: 700px;
-                height: 500px;
-                border: 2px solid #888;
-                margin: 20px auto;
-                background: #fff;
-            }
-            .grid-item {
-                border: 1px solid #bbb;
-                font-family: Arial, sans-serif;
-                font-size: 1.2em;
-                color: #444;
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
-                padding: 8px;
-                box-sizing: border-box;
-                background: #fff;
-            }
-            .bg-yellow { background: #fdf5d6; }
-            .bg-orange { background: #fae1d3; }
-            .bg-blue { background: #d6eaf8; }
-            .bg-green { background: #eaf3e0; }
-        </style>
     <meta name="description" content="Esto es la descripción de mi página web">
     <meta name="keywords" content="html, ejercicio, ejercicio1, ejemplo">
     <meta name="author" content="Victor Lopez Peindo">
@@ -41,25 +12,25 @@
     <link rel="icon" sizes="64x64" href="./assets/icon/descarga.png">
 </head>
 <body>
-<div class="grid-container">
-    <div class="grid-item bg-yellow" style="grid-column: 1; grid-row: 1;">1</div>
-    <div class="grid-item bg-orange" style="grid-column: 2 / span 2; grid-row: 1;">2</div>
-    <div class="grid-item bg-yellow" style="grid-column: 4; grid-row: 1 / span 2;">3</div>
-    <div class="grid-item bg-blue" style="grid-column: 4; grid-row: 2 / span 3;">4</div>
-    <div class="grid-item" style="grid-column: 1; grid-row: 2;">5</div>
-    <div class="grid-item bg-blue" style="grid-column: 2; grid-row: 2;">6</div>
-    <div class="grid-item bg-orange" style="grid-column: 3; grid-row: 2;">7</div>
-    <div class="grid-item bg-orange" style="grid-column: 1 / span 2; grid-row: 3;">8</div>
-    <div class="grid-item" style="grid-column: 3; grid-row: 3;">9</div>
-    <div class="grid-item bg-green" style="grid-column: 1; grid-row: 4;">10</div>
-    <div class="grid-item bg-blue" style="grid-column: 2; grid-row: 4;">11</div>
-    <div class="grid-item" style="grid-column: 3; grid-row: 4;">12</div>
-    <div class="grid-item bg-orange" style="grid-column: 4; grid-row: 4;">13</div>
-    <div class="grid-item bg-blue" style="grid-column: 1; grid-row: 5 / span 2;">14</div>
-    <div class="grid-item bg-green" style="grid-column: 2 / span 2; grid-row: 5 / span 2;">15</div>
-    <div class="grid-item" style="grid-column: 4; grid-row: 5;">16</div>
-    <div class="grid-item bg-blue" style="grid-column: 1; grid-row: 6;">17</div>
-    <div class="grid-item bg-yellow" style="grid-column: 4; grid-row: 6;">18</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: repeat(6, 80px); gap: 2px; width: 700px; height: 500px; border: 2px solid #888; margin: 20px auto; background: #fff;">
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fdf5d6; grid-column: 1; grid-row: 1;">1</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fae1d3; grid-column: 2 / span 2; grid-row: 1;">2</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fdf5d6; grid-column: 4; grid-row: 1 / span 2;">3</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #d6eaf8; grid-column: 4; grid-row: 2 / span 3;">4</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fff; grid-column: 1; grid-row: 2;">5</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #d6eaf8; grid-column: 2; grid-row: 2;">6</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fae1d3; grid-column: 3; grid-row: 2;">7</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fae1d3; grid-column: 1 / span 2; grid-row: 3;">8</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fff; grid-column: 3; grid-row: 3;">9</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #eaf3e0; grid-column: 1; grid-row: 4;">10</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #d6eaf8; grid-column: 2; grid-row: 4;">11</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fff; grid-column: 3; grid-row: 4;">12</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fae1d3; grid-column: 4; grid-row: 4;">13</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #d6eaf8; grid-column: 1; grid-row: 5 / span 2;">14</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #eaf3e0; grid-column: 2 / span 2; grid-row: 5 / span 2;">15</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fff; grid-column: 4; grid-row: 5;">16</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #d6eaf8; grid-column: 1; grid-row: 6;">17</div>
+    <div style="border: 1px solid #bbb; font-family: Arial, sans-serif; font-size: 1.2em; color: #444; display: flex; align-items: flex-start; justify-content: flex-start; padding: 8px; box-sizing: border-box; background: #fdf5d6; grid-column: 4; grid-row: 6;">18</div>
 </div>
 </body>
 </html>
